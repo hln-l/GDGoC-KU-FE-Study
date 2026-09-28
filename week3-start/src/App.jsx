@@ -4,6 +4,7 @@ import StatusMessage from './components/StatusMessage.jsx'
 import WordList from './components/WordList.jsx'
 import { useWordSearch } from './hooks/useWordSearch.js'
 import { WORDS } from './data/words.js'
+import RecommendedWords from './components/RecommendedWords.jsx'
 
 // localStorage 는 이 사이트 전체가 공유하는 "하나의 서랍"입니다.
 // 'words' 같은 짧은 이름을 쓰면 다른 라이브러리나 페이지와 부딪힐 수 있습니다.
@@ -85,7 +86,7 @@ export default function App() {
   return (
     <>
       <header className="page-header">
-        <h1 className="page-title">나만의 단어장</h1>
+        <h1 className="page-title">나만의 단어장!</h1>
         <p className="page-subtitle">저장된 단어 {words.length}개</p>
       </header>
 
@@ -137,3 +138,4 @@ export default function App() {
     </>
   )
 }
+<RecommendedWords />
